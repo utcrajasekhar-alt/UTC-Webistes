@@ -98,9 +98,12 @@ const fadeUp = {
 function Wordmark({ light = true }: { light?: boolean }) {
   return (
     <a className={`wordmark ${light ? "wordmark-light" : "wordmark-dark"}`} href="#top" aria-label="UTC — United Trading Company, home">
-      <span className="wordmark-main">UTC</span>
-      <span className="wordmark-name">UNITED TRADING COMPANY</span>
-      <span className="wordmark-est">EST. 1965</span>
+      <img className="wordmark-logo" src="/utc-logo.png" alt="" />
+      <span className="wordmark-copy">
+        <span className="wordmark-main">UTC</span>
+        <span className="wordmark-name">UNITED TRADING COMPANY</span>
+        <span className="wordmark-est">EST. 1965</span>
+      </span>
     </a>
   );
 }

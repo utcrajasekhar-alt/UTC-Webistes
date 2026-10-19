@@ -31,10 +31,12 @@ button { font: inherit; }
   backdrop-filter: blur(16px);
 }
 .header-inner { height: 100%; width: min(1360px, calc(100% - 72px)); margin: auto; display: flex; align-items: center; justify-content: space-between; }
-.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; line-height: 1; flex-shrink: 0; }
-.wordmark-main { color: var(--gold); font-family: "Cormorant Garamond", serif; font-size: 37px; font-weight: 600; letter-spacing: .12em; line-height: .8; }
-.wordmark-name { color: #fff; font-size: 7px; font-weight: 600; letter-spacing: .2em; margin-top: 8px; }
-.wordmark-est { color: #b8bdc8; font-size: 7px; letter-spacing: .18em; margin-top: 5px; }
+.wordmark { display: inline-flex; align-items: center; gap: 10px; line-height: 1; flex-shrink: 0; }
+.wordmark-logo { width: 52px; height: 52px; border: 1px solid rgba(201,164,92,.7); border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.wordmark-copy { display: flex; flex-direction: column; align-items: flex-start; }
+.wordmark-main { color: var(--gold); font-family: "Cormorant Garamond", serif; font-size: 31px; font-weight: 600; letter-spacing: .12em; line-height: .8; }
+.wordmark-name { color: #fff; font-size: 7px; font-weight: 600; letter-spacing: .2em; margin-top: 7px; }
+.wordmark-est { color: #b8bdc8; font-size: 7px; letter-spacing: .18em; margin-top: 4px; }
 .wordmark-dark .wordmark-name { color: var(--navy); }
 .wordmark-dark .wordmark-est { color: #737986; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(18px, 2.5vw, 36px); margin-left: auto; margin-right: 35px; }
@@ -276,6 +278,11 @@ h2 { font-family: "Cormorant Garamond", serif; font-size: clamp(44px, 5vw, 65px)
 }
 @media (max-width: 520px) {
   .page-width { width: calc(100% - 36px); }
+  .wordmark { gap: 7px; }
+  .wordmark-logo { width: 43px; height: 43px; }
+  .wordmark-main { font-size: 27px; }
+  .wordmark-name { font-size: 6px; letter-spacing: .13em; }
+  .wordmark-est { font-size: 6px; }
   .header-cta { font-size: 0; gap: 0; padding: 10px; width: 36px; height: 36px; justify-content: center; }
   .header-cta svg { width: 16px; height: 16px; }
   .hero { min-height: 680px; }
