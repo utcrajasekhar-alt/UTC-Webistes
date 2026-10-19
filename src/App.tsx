@@ -368,7 +368,7 @@ function App() {
           <h2>Every journey starts<br />with a <em>conversation.</em></h2>
           <p>Get in touch with UTC to discuss our business interests and international vision.</p>
           <div className="contact-details">
-            <a href="mailto:utc.asia26@gmail.com"><Mail size={18} /><span><small>EMAIL</small>utc.asia26@gmail.com</span><ArrowUpRight size={15} /></a>
+            <a href="mailto:support@utccrypto.world"><Mail size={18} /><span><small>EMAIL</small>support@utccrypto.world</span><ArrowUpRight size={15} /></a>
             <a href="tel:+13658912079"><Phone size={18} /><span><small>CALL</small>+1 (365) 891-2079</span><ArrowUpRight size={15} /></a>
             <a href="https://wa.me/13658912079" target="_blank" rel="noreferrer"><MessageCircle size={18} /><span><small>WHATSAPP</small>+1 (365) 891-2079</span><ArrowUpRight size={15} /></a>
           </div>
